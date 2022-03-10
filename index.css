@@ -19,6 +19,7 @@ a:hover {
 
 .head {
   width: 100%;
+  color: black;
 }
 .head-top {
   display: flex;
@@ -28,13 +29,59 @@ a:hover {
   background-color: #ffe300;
   padding: 0 calc((100% - 1200px) / 2);
 }
+.head-top > img {
+  height: 100%;
+  width: 100%;
+}
 .head-middle {
   display: flex;
   align-items: center;
   height: 40px;
-  background-color: #000;
+  background-color: white;
   padding: 0 calc((100% - 1200px) / 2);
-  color: white;
+  font-size: calc(1em - 2.4px);
+}
+.head-icon {
+  height: 70%;
+  margin-right: 16px;
+}
+.head-icon > img {
+  height: 100%;
+}
+.head-address {
+  margin-right: 16px;
+}
+.head-address > p {
+  color: #fed100;
+}
+.head-input-search {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  margin-right: 16px;
+}
+.head-input-search > input {
+  outline: none;
+  border: none;
+}
+.head-input-search-icon {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.head-cart {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-right: 16px;
+}
+.head-cart:hover {
+  opacity: 0.5;
+}
+.head-cart > i {
+  margin-right: 8px;
 }
 .head-bottom {
   display: flex;
@@ -42,6 +89,16 @@ a:hover {
   height: 43px;
   background-color: #fed100;
   padding: 0 calc((100% - 1200px) / 2);
+}
+.head-menu {
+  display: flex;
+}
+.head-menu-item {
+  width: 120px;
+  text-align: center;
+}
+.head-menu-item > i {
+  margin-right: 4px;
 }
 
 .section {
@@ -208,6 +265,52 @@ a:hover {
 .box-common-main > .item:hover {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   z-index: 1;
+}
+
+.product-news {
+  margin-top: 64px;
+}
+.product-news-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+.product-news-slider {
+  display: flex;
+}
+
+.item-new {
+  width: 400px;
+}
+.item-new > img {
+  height: 214px;
+  width: 100%;
+}
+.item-new + .item-new {
+  margin-left: 16px;
+}
+
+.footer {
+  display: flex;
+  padding: 0 calc((100% - 1200px) / 2);
+  border-top: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+.footer-list {
+  width: 400px;
+}
+.footer-list-item {
+  padding: 4px;
+  border: 1px solid white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+.footer-list + .footer-list {
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
