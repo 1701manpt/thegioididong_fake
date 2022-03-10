@@ -58,6 +58,7 @@ a:hover {
 }
 .head-middle {
   display: flex;
+  position: relative;
   align-items: center;
   height: 40px;
   background-color: white;
@@ -106,6 +107,23 @@ a:hover {
 .head-cart > i {
   margin-right: 8px;
 }
+.head-right {
+  display: flex;
+  position: absolute;
+  right: calc((100% - 1200px) / 2);
+  height: 100%;
+}
+.head-right-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.head-right-item:hover {
+  color: #fed100;
+}
 .head-bottom {
   display: flex;
   align-items: center;
@@ -115,10 +133,19 @@ a:hover {
 }
 .head-menu {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 .head-menu-item {
+  display: flex;
   width: 120px;
   text-align: center;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.head-menu-item:hover {
+  background-color: white;
 }
 .head-menu-item > i {
   margin-right: 4px;
