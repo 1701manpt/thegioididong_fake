@@ -152,6 +152,12 @@ a {
     padding: 8px 16px;
     background-color: white;
     border-radius: 4px;
+    &:hover {
+        .item-img {
+            transform: translateY(-16px);
+            transition: all 0.5s ease-in-out;
+        }
+    }
     &:first-of-type {
         margin-left: 8px;
     }
@@ -163,6 +169,7 @@ a {
     }
     &-img {
         margin-top: 32px;
+        transition: all 0.5s linear;
         & > img {
             width: 100%;
         }
@@ -182,6 +189,11 @@ a {
 // box common
 .box-common {
     margin-top: 64px;
+    &-flex {
+        & > .box-common-main {
+            display: flex;
+        }
+    }
     &-top {
         margin-bottom: 16px;
         display: flex;

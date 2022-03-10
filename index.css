@@ -132,6 +132,10 @@ a:hover {
   background-color: white;
   border-radius: 4px;
 }
+.item:hover .item-img {
+  transform: translateY(-16px);
+  transition: all 0.5s ease-in-out;
+}
 .item:first-of-type {
   margin-left: 8px;
 }
@@ -143,6 +147,7 @@ a:hover {
 }
 .item-img {
   margin-top: 32px;
+  transition: all 0.5s linear;
 }
 .item-img > img {
   width: 100%;
@@ -160,6 +165,9 @@ a:hover {
 
 .box-common {
   margin-top: 64px;
+}
+.box-common-flex > .box-common-main {
+  display: flex;
 }
 .box-common-top {
   margin-bottom: 16px;
