@@ -261,7 +261,7 @@ a:hover {
 }
 .item:hover .item-img {
   transform: translateY(-16px);
-  transition: all 0.5s ease-in-out;
+  webkit-transition: all 300ms ease-in-out;
 }
 .item:first-of-type {
   margin-left: 8px;
@@ -274,7 +274,7 @@ a:hover {
 }
 .item-img {
   margin-top: 32px;
-  transition: all 0.5s linear;
+  transition: all 300ms ease-in-out;
 }
 .item-img > img {
   width: 100%;
