@@ -17,7 +17,30 @@ a {
 
 // app
 .app {
+    position: relative;
     width: 100%;
+}
+
+.banner-left {
+    position: fixed;
+    top: 50%;
+    left: calc((100% - 1200px) / 4);
+    transform: translateY(-50%) translateX(-50%);
+    & > img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.banner-right {
+    position: fixed;
+    top: 50%;
+    right: calc((100% - 1200px) / 4);
+    transform: translateY(-50%) translateX(50%);
+    & > img {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 // head
