@@ -83,7 +83,7 @@ a:hover {
   align-items: center;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 8px;
+  padding: 8px 0 8px 8px;
   margin-right: 16px;
 }
 .head-input-search > input {
@@ -94,6 +94,7 @@ a:hover {
   display: flex;
   justify-content: center;
   color: black;
+  padding: 0 8px;
 }
 .head-cart {
   padding: 8px;
@@ -138,7 +139,7 @@ a:hover {
 }
 .head-menu-item {
   display: flex;
-  width: 120px;
+  padding: 0 16px;
   text-align: center;
   height: 100%;
   align-items: center;
@@ -149,6 +150,10 @@ a:hover {
 }
 .head-menu-item > i {
   margin-right: 4px;
+  font-size: 1.5em;
+}
+.head-menu-item.active {
+  background-color: white;
 }
 
 .section {
@@ -363,24 +368,10 @@ a:hover {
 
 .footer {
   display: flex;
+  margin-top: 64px;
   padding: 0 calc((100% - 1200px) / 2);
   border-top: 1px solid #f1f1f1;
-  background-color: #f1f1f1;
-}
-.footer-list {
-  width: 400px;
-}
-.footer-list-item {
-  padding: 4px;
-  border: 1px solid white;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 16px 0;
-}
-.footer-list + .footer-list {
-  margin-left: 16px;
+  height: 320px;
 }
 
 /*# sourceMappingURL=index.css.map */
